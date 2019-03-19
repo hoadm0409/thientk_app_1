@@ -27,6 +27,8 @@ def load_input_word_list(file_path):
             if not text:
                 continue
 
+            text = text.replace('_', ' ')
+
             score = float(data[1])
 
             if score < 0:
